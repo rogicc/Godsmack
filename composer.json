@@ -1,0 +1,19 @@
+{
+    "name": "rogila/godsmack",
+    "autoload": {
+        "psr-4": {
+            "Rogila\\Godsmack\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "rogicc",
+            "email": "rogicnemanja5@gmail.com"
+        }
+    ],
+    "require": {
+        "getbrevo/brevo-php": "^2.0",
+        "phpmailer/phpmailer": "^7.0",
+        "fakerphp/faker": "^1.24"
+    }
+}
