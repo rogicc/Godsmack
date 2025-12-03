@@ -1,187 +1,14 @@
 <!DOCTYPE html>
-<html lang="sr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aplikacija za Recepte - Početna</title>
+    <title>Godsmack - Recipes & Food</title>
+    <link rel="stylesheet" href="assets/css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
-    <style>
-        :root {
-            --primary-color: #ff6b35;
-            --secondary-color: #f7931e;
-            --dark-color: #2c3e50;
-            --light-bg: #fff5f0;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #fff5f0 0%, #ffffff 100%);
-        }
-
-        /* Navigacija */
-        .navbar {
-            background: white;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-
-        .navbar-brand {
-            font-weight: bold;
-            color: var(--primary-color) !important;
-            font-size: 1.5rem;
-        }
-
-        .nav-link {
-            color: var(--dark-color) !important;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        .nav-link:hover {
-            color: var(--primary-color) !important;
-        }
-
-        .btn-primary-custom {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            border: none;
-            color: white;
-            padding: 0.75rem 2rem;
-            border-radius: 50px;
-            font-weight: 600;
-            transition: all 0.3s;
-        }
-
-        .btn-primary-custom:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(255, 107, 53, 0.4);
-        }
-
-        /* Hero Sekcija */
-        .hero-section {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            padding: 100px 0;
-            text-align: center;
-        }
-
-        .hero-section h1 {
-            font-size: 3.5rem;
-            font-weight: bold;
-            margin-bottom: 1.5rem;
-        }
-
-        .hero-section p {
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
-            opacity: 0.95;
-        }
-
-        /* Recipe Cards */
-        .recipe-card {
-            background: white;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: all 0.3s;
-            margin-bottom: 2rem;
-        }
-
-        .recipe-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-        }
-
-        .recipe-card-img {
-            height: 200px;
-            background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 4rem;
-        }
-
-        .recipe-card-body {
-            padding: 1.5rem;
-        }
-
-        .recipe-card-title {
-            font-size: 1.3rem;
-            font-weight: bold;
-            margin-bottom: 0.75rem;
-        }
-
-        .recipe-meta {
-            display: flex;
-            gap: 1rem;
-            margin-bottom: 1rem;
-            font-size: 0.9rem;
-            color: #666;
-        }
-
-        .recipe-meta i {
-            color: var(--secondary-color);
-        }
-
-        /* Features Section */
-        .features-section {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            padding: 80px 0;
-            margin-top: 4rem;
-        }
-
-        .feature-card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 2rem;
-            text-align: center;
-            height: 100%;
-        }
-
-        .feature-card i {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .feature-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        /* Footer */
-        footer {
-            background: var(--dark-color);
-            color: white;
-            padding: 3rem 0 1rem;
-            margin-top: 4rem;
-        }
-
-        .footer-links a {
-            color: white;
-            text-decoration: none;
-            opacity: 0.8;
-            transition: opacity 0.3s;
-        }
-
-        .footer-links a:hover {
-            opacity: 1;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero-section h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero-section p {
-                font-size: 1.1rem;
-            }
-        }
-    </style>
 </head>
 <body>
-
 <!-- Navigacija -->
 <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container">
@@ -241,7 +68,7 @@
                 <i class="bi bi-search"></i> Search recipes
             </a>
             <a href="public/register.php" class="btn btn-outline-light btn-lg px-5">
-                Registrujte se besplatno
+                Register for free
             </a>
         </div>
     </div>
@@ -250,9 +77,9 @@
 <!-- Popularni recepti -->
 <section class="container my-5">
     <div class="d-flex justify-content-between align-items-center mb-4">
-        <h2 class="fw-bold"><i class="bi bi-fire text-danger"></i> Popularni recepti</h2>
+        <h2 class="fw-bold"><i class="bi bi-fire text-danger"></i> Popular recipes</h2>
         <a href="recepti.php" class="text-decoration-none fw-semibold" style="color: var(--primary-color);">
-            Vidi sve <i class="bi bi-arrow-right"></i>
+            See everything <i class="bi bi-arrow-right"></i>
         </a>
     </div>
 
@@ -338,19 +165,18 @@
 <!-- Features Sekcija -->
 <section class="features-section">
     <div class="container">
-        <h2 class="text-center fw-bold mb-5">Zašto izabrati našu aplikaciju?</h2>
+        <h2 class="text-center fw-bold mb-5">Why choose our app?</h2>
         <div class="row g-4">
             <div class="col-md-4">
                 <div class="feature-card">
                     <i class="bi bi-search"></i>
-                    <h3>Inteligentna pretraga</h3>
-                    <p>Unesite sastojke koje imate i dobijte savršen recept. Sistem preporučuje recepte sa dostupnim sastojcima i prikazuje i one kojima nedostaje najmanje.</p>
-                </div>
+                    <h3>Smart search</h3>
+                    <p>Enter the ingredients you have and get the perfect recipe. The system recommends recipes with available ingredients and shows the ones with the least amount of missing ingredients.</p>                </div>
             </div>
             <div class="col-md-4">
                 <div class="feature-card">
                     <i class="bi bi-cart-check"></i>
-                    <h3>Shopping lista</h3>
+                    <h3>Shopping list</h3>
                     <p>Automatski generiše listu za kupovinu. Dodajte sastojke direktno iz recepata jednim klikom i nikad više ne zaboravite šta treba da kupite.</p>
                 </div>
             </div>
@@ -393,7 +219,7 @@
         </div>
         <hr class="opacity-25 my-4">
         <div class="text-center opacity-75">
-            <p class="mb-0">&copy; 2024 ReceptiApp. Sva prava zadržana.</p>
+            <p class="mb-0">&copy; 2025 GODSMACK. All rights reserved.</p>
         </div>
     </div>
 </footer>
